@@ -1,10 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-    const banner = document.querySelector('header.banner');
+document.addEventListener("DOMContentLoaded", function() {
+    //smooth scrolling
+    document.querySelectorAll("a[href^='#']").forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    });
 
-    menuToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-        banner.classList.toggle('expanded');
+    //toggle navigation menu for mobile
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("active");
+    });
+
+    //scroll to about me section when button is clicked
+    document.getElementById("scroll-to-about").addEventListener("click", function() {
+        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
     });
 });
