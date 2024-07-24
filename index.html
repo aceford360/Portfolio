@@ -4,50 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!-- Link to stylesheet -->
+    <!--link to stylesheet-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Banner / Navbar -->
+    <!--banner / navbar-->
     <header class="banner">
-        <!-- Navigation bar -->
+        <!--navigation bar-->
         <nav>
-            <div class="nav-title">Margareth R</div>
-            <!-- Hamburger icon for mobile only -->
+            <div class="nav-title"><a href="index.html">Margareth R</a></div>
+
+            <!--hamburger icon for mobile only-->
             <div class="menu-toggle" id="menu-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul id="nav-links">
-                <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <!-- About me section in banner -->
-        <div class="banner-text">
-            <h1>Hello, I'm Margareth</h1>
-            <p>I make designs</p>
+        <!--banner section-->
+        <div class="banner-content">
+            <div class="banner-text">
+                <h2>Hello, my name is</h2>
+                <h1>Margareth</h1>
+                <button class="scroll-button" id="scroll-to-about">About Me</button>
+            </div>
+            
+            <div class="banner-image">
+                <img src="images/profile.PNG" alt="Margareth's Profile Picture">
+            </div>
         </div>
     </header>
     <main>
-        <!-- Show projects here -->
-        <section id="projects">
-            <h2>Projects</h2> <!-- Changed to h2 -->
-            <div class="project-gallery">
-                <div class="project-box">
-                    <img src="project1-thumbnail.jpg" alt="Project 1">
+        <!--about me section-->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-image">
+                    <!--png image from pngtree.com>-->
+                    <img src="images/photo1.png" alt="man on computer">
                 </div>
-                <div class="project-box">
-                    <img src="project2-thumbnail.jpg" alt="Project 2">
-                </div>
-                <div class="project-box">
-                    <img src="project3-thumbnail.jpg" alt="Project 3">
-                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hi! I'm Margareth and I'm a front-end developer. I specialize in creating functional yet aesthetic web designs. 
+                        With a background in Web development and Design, I'm dedicated to ensuring that my works provide the best experience for everyone. </p>
+                    <p>Feel free to check out any of my projects below <br> and get in touch if you have any questions !</p>
+                </div>          
             </div>
-        </section>        
+        </section>
+        <!-- Show projects here -->
+        <section id="projects" class="projects-section">
+            <h2>Currently in progress</h2>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Margareth Robinson</p>
