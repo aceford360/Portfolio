@@ -6,7 +6,7 @@ body {
 
 /*banner*/
 header.banner {
-    background: url("../images/bannerimage.PNG") no-repeat center center;
+    background: url("images/bannerimage.PNG") no-repeat center center;
     background-size: cover;
     color: #fff;
     height: 100vh;
